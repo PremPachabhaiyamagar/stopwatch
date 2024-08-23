@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div id="app" class="container">
+      <span class="container__title">Countdown Timer</span>
+      <div class="container__labels">
+        <span class="container__labels__label"> Days </span>
+        <span class="container__labels__label"> Hours </span>
+        <span class="container__labels__label">Minutes</span>
+        <span class="container__labels__label">second</span>
+      </div>
+      <div class="container__inputs">
+        <input
+          type="number"
+          maxlength="2"
+          oninput="this.value =
+      this.value.slice(0,maxLength)"
+          class="container__inputs__time days"
+          placeholder="00"
+        />
+        <p class="container_colons">:</p>
+        <input
+          type="number"
+          maxlength="2"
+          oninput="this.value =
+        this.value.slice(0,maxLength)"
+          class="container__inputs__time hour"
+          placeholder="00"
+        />
+        <p class="container_colons">:</p>
+        <input
+          type="number"
+          maxlength="2"
+          oninput="this.value =
+      this.value.slice(0,maxLength)"
+          class="container__inputs__time minute"
+          placeholder="00"
+        />
+        <p class="container_colons">:</p>
+        <input
+          type="number"
+          maxlength="2"
+          oninput="this.value =
+    this.value.slice(0,maxLength)"
+          class="container__inputs__time second"
+          placeholder="00"
+        />
+      </div>
+      <div class="container__buttons">
+        <button type="button" class="btn start" value="text">start</button>
+        <button type="button" class="btn stop" value="text">stop</button>
+        <button type="button" class="btn reset" value="text">reset</button>
+      </div>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
